@@ -4,7 +4,7 @@ let addTaskButton = document.getElementsByClassName("addtask-btn")[0],
 console.log('1');
 
 addTaskButton.addEventListener('click', function(){
-    let newTask = newTaskTextField.value.replace(/\s/g,'');
+    let newTaskMinified = newTaskTextField.value.replace(/\s/g,'');
     console.log(newTask);
     if (newTaskMinified == "" || newTaskMinified == null){
         alert("field cannot be empty");
